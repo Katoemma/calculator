@@ -5,8 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    
+<body class="flex flex-col items-center pt-12 h-screen" style="background: linear-gradient(315deg, rgba(15,31,117,1) 0%, rgba(2,12,69,1) 0%, rgba(7,73,157,1) 63%, rgba(8,3,89,1) 90%);">
+    <!--calculator container-->
+    <div class="flex flex-col gap-4 w-96 p-4 border-8 border-white rounded-3xl">
+        <!--the screen container-->
+        <div class="h-40 w-full bg-displaygray p-4 ">
+            <h1 class="text-3xl font-bold">00 + 00</h1>
+            <h1 class="text-4xl font-bold self-end mb-0.5">000000</h1>
+        </div>
+        <!--buttons container-->
+        <div class="flex flex-col gap-4">
+            <!--first line of buttons-->
+            <div class="flex justify-between">
+                <button class="bg-reddish text-white px-6 py-2">CE</button>
+                <button class="bg-black text-white px-6 py-2">BACK</button>
+            </div>
+            <!--2nd line of buttons-->
+            <div class="flex justify-between">
+                <button class="bg-black text-white px-6 py-2">1</button>
+                <button class="bg-black text-white px-6 py-2">2</button>
+                <button class="bg-black text-white px-6 py-2">3</button>
+                <button class="bg-black text-white px-6 py-2">+</button>
+            </div>
+            <!--3rd line of buttons-->
+            <div class="flex justify-between">
+                <button class="bg-black text-white px-6 py-2">4</button>
+                <button class="bg-black text-white px-6 py-2">5</button>
+                <button class="bg-black text-white px-6 py-2">6</button>
+                <button class="bg-black text-white px-6 py-2">/</button>
+            </div>
+            <!--4th line of buttons-->
+            <div class="flex justify-between">
+                <button class="bg-black text-white px-6 py-2">7</button>
+                <button class="bg-black text-white px-6 py-2">8</button>
+                <button class="bg-black text-white px-6 py-2">9</button>
+                <button class="bg-black text-white px-6 py-2">-</button>
+            </div>
+            <!--5th line of buttons-->
+            <div class="flex justify-between">
+                <button class="bg-black text-white px-6 py-2">0</button>
+                <button class="bg-black text-white px-6 py-2">.</button>
+                <button class="bg-black text-white px-6 py-2">=</button>
+                <button class="bg-black text-white px-6 py-2">*</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
